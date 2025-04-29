@@ -79,6 +79,13 @@ python run_admin.py
 ```
 ---
 
+## Running Article Pipeline
+In a separate terminal, start the article pipeline. It scrapes active news sources, clusters them, initializes summary database and adds unsummarized articles to queue for celery worker to process  
+```bash
+python article_pipeline.py
+```
+---
+
 ## Running Celery flower
 To visualize the workers and tasks we can use celery flower. By default you can access  at ```localhost:5555/```  
 ```bash
